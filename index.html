@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header class="bg-header container">
+      <div>
+        <img src="./img/Logo.svg" alt="" />
+      </div>
+    </header>
+    <main>
+      <section class="newTask">
+        <input
+          type="text"
+          placeholder="Adicione uma nova tarefa"
+          id="addTaskInput"
+        />
+        <button class="addTaskBtn">
+          Criar <img src="./img/plusicon.svg" alt="" />
+        </button>
+      </section>
+      <section class="tasks">
+        <div class="tasksInfo">
+          <p>Tarefas criadas <span class="counterCreated">0</span></p>
+          <p>Concluídas <span class="counterDone">0</span></p>
+        </div>
+        <div class="tasksList">
+          <img src="./img/Clipboard.svg" />
+          <p class="textEmpty">
+            <span>Você ainda não tem tarefas cadastradas</span><br />Crie
+            tarefas e organize seus itens a fazer
+          </p>
+        </div>
+      </section>
+      <section class="tasks"></section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
