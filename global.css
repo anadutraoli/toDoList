@@ -10,13 +10,134 @@
   --gray-500: #262626;
   --gray-400: #333333;
   --gray-300: #808080;
-  --gray-200: #;
-  --gray-100: #;
+  --gray-200: #d9d9d9;
+  --gray-100: #f2f2f2;
   --danger: #e25858;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--gray-600);
+  font-family: "Inter", sans-serif;
+  color: var(--gray-300);
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .container {
-    max-width: 1440px;
-    margin: 0 auto;
-    background-color: aqua;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+
+.bg-header {
+  height: 200px;
+  background-color: var(--gray-700);
+}
+
+.newTask {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 64px;
+}
+
+.newTask input {
+  background-color: var(--gray-500);
+  padding: 16px;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  width: 600px;
+  text-align: left;
+  font-size: 1rem;
+  color: var(--gray-100);
+}
+
+.newTask input:focus {
+  border-color: var(--purple-dark);
+}
+
+.newTask button {
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+  background-color: var(--blue-dark);
+  color: var(--gray-100);
+  border-radius: 8px;
+  font-size: 0.875rem;
+}
+
+.newTask button:hover {
+  background-color: var(--blue);
+}
+
+.tasks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tasksInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasksInfo p {
+  font-weight: 600;
+  font-size: 0.875rem;
+  display: flex;
+  gap: 8px;
+}
+
+.taskCreated {
+  color: var(--blue);
+}
+
+.taskDone {
+  color: var(--purple);
+}
+
+.tasksList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 8px;
+  border-top: 1px solid var(--gray-500);
+  padding: 64px 28px;
+}
+
+.textEmpty {
+  font-size: 1rem;
+}
+
+.textEmpty span {
+  font-weight: 600;
 }
