@@ -43,6 +43,10 @@ img {
   max-width: 100%;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -53,11 +57,15 @@ img {
 }
 
 .bg-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 200px;
   background-color: var(--gray-700);
+  margin-bottom: -25px;
 }
 
-.newTask {
+.new-task {
   display: flex;
   gap: 8px;
   justify-content: center;
@@ -66,7 +74,7 @@ img {
   padding-bottom: 64px;
 }
 
-.newTask input {
+.new-task input {
   background-color: var(--gray-500);
   padding: 16px;
   border: 1px solid var(--gray-400);
@@ -77,11 +85,11 @@ img {
   color: var(--gray-100);
 }
 
-.newTask input:focus {
+.new-task input:focus {
   border-color: var(--purple-dark);
 }
 
-.newTask button {
+.new-task button {
   display: flex;
   gap: 8px;
   padding: 16px;
@@ -91,7 +99,7 @@ img {
   font-size: 0.875rem;
 }
 
-.newTask button:hover {
+.new-task button:hover {
   background-color: var(--blue);
 }
 
@@ -100,22 +108,31 @@ img {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding-bottom: 200px;
 }
 
-.tasksInfo {
+.tasks-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.tasksInfo p {
+.tasks-info p {
   font-weight: 600;
   font-size: 0.875rem;
   display: flex;
+  align-items: center;
   gap: 8px;
 }
 
-.taskCreated {
+.tasks-info span {
+  background-color: var(--gray-400);
+  padding: 2px 8px;
+  border-radius: 999px;
+  color: var(--gray-200);
+}
+
+.task-created {
   color: var(--blue);
 }
 
@@ -123,7 +140,7 @@ img {
   color: var(--purple);
 }
 
-.tasksList {
+.tasks-list-empty {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -134,10 +151,10 @@ img {
   padding: 64px 28px;
 }
 
-.textEmpty {
+.text-empty {
   font-size: 1rem;
 }
 
-.textEmpty span {
+.text-empty span {
   font-weight: 600;
 }
