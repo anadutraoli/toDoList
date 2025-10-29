@@ -158,3 +158,62 @@ ul {
 .text-empty span {
   font-weight: 600;
 }
+
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background-color: var(--gray-500);
+  padding: 16px;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.task-concluida > .div-task span {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.div-task {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.div-task span {
+  color: var(--gray-100);
+  font-size: 0.875rem;
+}
+
+.div-task input[type="checkbox"] {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.div-task input[type="checkbox"]:checked {
+  background-color: var(--purple-dark);
+  border: none;
+  background-image: url("./img/checked.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 5px;
+}
